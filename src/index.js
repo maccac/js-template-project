@@ -1,8 +1,9 @@
-import './index.css'
 import numeral from 'numeral';
+import './index.css';
 
-const a = 1000
-const b = 500
+/* eslint-disable no-console */
+
+const a = 1000;
+const b = 500;
 const c = numeral(a).multiply(b).format('$0,0.00');
-debugger;
-console.log(`${a} * ${b} = ${c}`)
+console.log(`${a} * ${b} = ${c}`);

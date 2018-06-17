@@ -2,7 +2,6 @@ import webpack from 'webpack';
 import path from 'path';
 
 export default {
-  debug: true,
   devtool: 'inline-source-map',
   entry: [
     path.resolve(__dirname, 'src/index')
@@ -15,14 +14,14 @@ export default {
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
-        debug: true,
-        noInfo: false,
-      })
+      debug: true,
+      noInfo: false,
+    })
   ],
   module: {
     rules: [
-      {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
-      {test: /\.css$/, loaders: ['style-loader','css-loader']}
+      { test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader'] },
+      { test: /\.css$/, loaders: ['style-loader', 'css-loader'] }
     ]
   }
-}
+};
