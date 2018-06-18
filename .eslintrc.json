@@ -12,11 +12,12 @@
   "env": {
     "browser": true,
     "node": true,
-    "mocha": true
+    "jest": true
   },
   "rules": {
     "no-console": 1,
     "trailing-comma": [false, {}],
-    "comma-dangle": ["off"]
+    "comma-dangle": ["off"],
+    "padded-blocks": ["error", "always"]
   }
 }
