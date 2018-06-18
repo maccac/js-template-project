@@ -17,7 +17,6 @@
   "rules": {
     "no-console": 1,
     "trailing-comma": [false, {}],
-    "comma-dangle": ["off"],
-    "padded-blocks": ["error", "always"]
+    "comma-dangle": ["off"]
   }
 }
